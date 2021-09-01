@@ -434,13 +434,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194354013}
-  m_LocalRotation: {x: -0, y: -0, z: -0.13550977, w: 0.990776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.74, y: 1.67, z: 0}
   m_LocalScale: {x: 2.024578, y: 2.024578, z: 2.024578}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.576001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1194354016
 Rigidbody2D:
   serializedVersion: 4
@@ -456,7 +456,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -520,6 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f00af71180b942bd95a225b0a6f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1194354016}
 --- !u!95 &1194354019
 Animator:
   serializedVersion: 3

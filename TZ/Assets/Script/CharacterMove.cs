@@ -4,25 +4,22 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour
 {
-    float gravity;
     private Animator anim;
+    public Rigidbody2D player;
+    private float thrust = 10.0f;
     void Start()
     {
-        gravity = GetComponent<Rigidbody2D>().gravityScale;
         anim = GetComponent<Animator>();
     }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            gravity = -gravity;
-            GetComponent<Rigidbody2D>().gravityScale = gravity;
+            player.AddForce(transform.up * thrust,ForceMode2D.Impulse);
             anim.SetBool("IsJump", true);
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            gravity = -gravity;
-            GetComponent<Rigidbody2D>().gravityScale = gravity;
             anim.SetBool("IsJump", false);
         }
     }
