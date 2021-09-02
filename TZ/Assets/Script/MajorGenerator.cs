@@ -5,6 +5,7 @@ using UnityEngine;
 public class MajorGenerator : MonoBehaviour
 {
     public GameObject major;
+    public GameObject scopeZone;
     Vector2 point;
     Vector2 difference = new Vector2(0,4);
     float time = 3; // Раз всколько секунд нужно рожать майоров.
@@ -12,6 +13,7 @@ public class MajorGenerator : MonoBehaviour
     {
         Instantiate(major, point - difference, Quaternion.identity);
         Instantiate(major, point + difference, Quaternion.identity);
+        Instantiate(scopeZone, point, Quaternion.identity);
     }
 
     private void Update()

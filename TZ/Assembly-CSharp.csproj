@@ -67,7 +67,7 @@
     <Compile Include="Assets\Script\CharacterMove.cs" />
     <Compile Include="Assets\Script\MajorGenerator.cs" />
     <Compile Include="Assets\Script\MajorMove.cs" />
-    <Compile Include="Assets\Script\Music.cs" />
+    <Compile Include="Assets\Script\ScopeAdd.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity3D/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
