@@ -19,8 +19,7 @@ public class MajorGenerator : MonoBehaviour
             time -= Time.deltaTime;
         if (time <= 0) 
         {
-            new WaitForSeconds(3.0f);
-            point = new Vector2(10, Random.Range(0, 3));
+            point = new Vector2(20, Random.Range(0, 3));
             Generation(point);
             time = 3;
         }
