@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class MajorMove : MonoBehaviour
 {
-    void Update()
+    private GameObject player;
+    private void Awake()
     {
-        transform.position -= transform.right * Time.deltaTime*2;
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+    void Update()
+    {  
         if(GetComponent<Transform>().position.x < -15)
         {
             Destroy(gameObject); //За военкоматом нет жизни
+        }
+        if(player.GetComponent<Fail>().IsLose != true)
+        {
+            transform.position -= transform.right * Time.deltaTime * 2;
         }
     }
 }

@@ -311,6 +311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   major: {fileID: 7559694134596839248, guid: 6994cb7842e2d9847be60869d3a43a8c, type: 3}
   scopeZone: {fileID: 98230331487222522, guid: f40d99ce2595d6b409548d014607696f, type: 3}
+  player: {fileID: 1194354013}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1165,6 +1166,7 @@ MonoBehaviour:
   failBoard: {fileID: 608492400}
   failScreen: {fileID: 377777084}
   floor: {fileID: 1943561290}
+  IsLose: 0
 --- !u!1 &1387292809
 GameObject:
   m_ObjectHideFlags: 0

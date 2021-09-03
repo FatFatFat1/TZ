@@ -6,8 +6,9 @@ public class MajorGenerator : MonoBehaviour
 {
     public GameObject major;
     public GameObject scopeZone;
+    public GameObject player;
     Vector2 point;
-    Vector2 difference = new Vector2(0,4);
+    Vector2 difference = new Vector2(0, 4);
     float time = 3; // Раз всколько секунд нужно рожать майоров.
     void Generation(Vector2 point)
     {
@@ -18,12 +19,15 @@ public class MajorGenerator : MonoBehaviour
 
     private void Update()
     {
-            time -= Time.deltaTime;
-        if (time <= 0) 
+        if (player.GetComponent<Fail>().IsLose != true)
         {
-            point = new Vector2(20, Random.Range(0, 3));
-            Generation(point);
-            time = 3;
+            time -= Time.deltaTime;
+            if (time <= 0)
+            {
+                point = new Vector2(20, Random.Range(0, 3));
+                Generation(point);
+                time = 3;
+            }
         }
     }
 }
