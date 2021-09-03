@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ScopeAdd : MonoBehaviour
 {
-    GameObject scopeZone;
     private GameObject player;
     private void Awake()
     {
@@ -12,8 +11,13 @@ public class ScopeAdd : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        int record = player.GetComponent<ScopeData>().record;
         int scope = player.GetComponent<ScopeData>().scope;
         scope += 1;
+        if (scope > record)
+        {
+            player.GetComponent<ScopeData>().record = scope;
+        }
         player.GetComponent<ScopeData>().scope = scope;
     }
 }

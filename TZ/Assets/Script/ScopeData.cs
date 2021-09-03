@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class ScopeData : MonoBehaviour
 {
     public int scope;
-    public GameObject canvas;
+    public int record;
+    public GameObject scopeBoard;
+    public GameObject recordBoard;
     private void Update()
     {
-        canvas.GetComponent<Text>().text = scope.ToString();
+        scopeBoard.GetComponent<Text>().text = scope.ToString();
+        recordBoard.GetComponent<Text>().text = record.ToString();
     }
 }
