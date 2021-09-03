@@ -9,6 +9,7 @@ public class Fail : MonoBehaviour
     public GameObject board;
     public GameObject failBoard;
     public GameObject failScreen;
+    public GameObject floor;
 
     [System.Obsolete]
     void OnCollisionEnter2D(Collision2D collision)
@@ -18,6 +19,7 @@ public class Fail : MonoBehaviour
             board.active = false;
             failBoard.active = true;
             failScreen.GetComponent<Text>().text = player.GetComponent<ScopeData>().scope.ToString();
+            floor.GetComponent<Animator>().SetBool("IsLose", true);
         }
     }
 }
