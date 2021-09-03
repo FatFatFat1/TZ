@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Fail : MonoBehaviour
 {
     public GameObject player;
-    public GameObject board;
-    public GameObject failBoard;
-    public GameObject failScreen;
-    public GameObject floor;
+    public GameObject board; // Канвас с очками
+    public GameObject failBoard; //Канвас проигрыша
+    public GameObject failScreen; // Text с кол-вом набранным очков в failBoard
+    public GameObject floor; // для того чтобы отключать анимацию движения полу
     public bool IsLose=false;
 
     [System.Obsolete]

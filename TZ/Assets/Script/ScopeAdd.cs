@@ -13,6 +13,7 @@ public class ScopeAdd : MonoBehaviour
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        //Чтение рекорда из файла
         using (FileStream recordSave = new FileStream(path, FileMode.Open))
         {
             byte[] array = new byte[recordSave.Length];
@@ -28,6 +29,7 @@ public class ScopeAdd : MonoBehaviour
         scope += 1;
         if (scope > record)
         {
+            //Запись нового рекорда
             player.GetComponent<ScopeData>().record = scope;
             using (FileStream recordSave = new FileStream(path, FileMode.OpenOrCreate))
             {
