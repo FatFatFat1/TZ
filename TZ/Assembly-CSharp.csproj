@@ -66,6 +66,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CharacterMove.cs" />
     <Compile Include="Assets\Script\Fail.cs" />
+    <Compile Include="Assets\Script\LoseScreenButton.cs" />
+    <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\MajorGenerator.cs" />
     <Compile Include="Assets\Script\MajorMove.cs" />
     <Compile Include="Assets\Script\ScopeAdd.cs" />
