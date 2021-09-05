@@ -9,12 +9,12 @@ public class ScopeAdd : MonoBehaviour
     private GameObject player;
     int record;
     int scope;
-    string path = @"D:\FlappyBird\TZ\TZ\Assets\Script\record.txt";
+    //string path = @"D:\FlappyBird\TZ\TZ\Assets\Script\record.txt";
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         //Чтение рекорда из файла
-        using (FileStream recordSave = new FileStream(path, FileMode.Open))
+        using (FileStream recordSave = new FileStream(Application.dataPath + "/record.txt", FileMode.Open))
         {
             byte[] array = new byte[recordSave.Length];
             recordSave.Read(array, 0, array.Length);
@@ -31,7 +31,7 @@ public class ScopeAdd : MonoBehaviour
         {
             //Запись нового рекорда
             player.GetComponent<ScopeData>().record = scope;
-            using (FileStream recordSave = new FileStream(path, FileMode.OpenOrCreate))
+            using (FileStream recordSave = new FileStream(Application.dataPath + "/record.txt", FileMode.OpenOrCreate))
             {
                 byte[] array = System.Text.Encoding.Default.GetBytes(scope.ToString());
                 recordSave.Write(array, 0, array.Length);

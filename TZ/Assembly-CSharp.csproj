@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\ScopeAdd.cs" />
     <Compile Include="Assets\Script\ScopeData.cs" />
     <None Include="Assets\Script\record.txt" />
+    <None Include="Assets\record.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity3D/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
