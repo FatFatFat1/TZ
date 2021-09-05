@@ -20,5 +20,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
         SceneManager.UnloadSceneAsync("SampleScene");
     }
+    public void SoundPressed()
+    {
+        SceneManager.LoadScene("Sound");
+        SceneManager.UnloadSceneAsync("Main Menu");
+    }
 
 }

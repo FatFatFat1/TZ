@@ -70,8 +70,11 @@
     <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\MajorGenerator.cs" />
     <Compile Include="Assets\Script\MajorMove.cs" />
+    <Compile Include="Assets\Script\MusicСondition.cs" />
+    <Compile Include="Assets\Script\MyVariable.cs" />
     <Compile Include="Assets\Script\ScopeAdd.cs" />
     <Compile Include="Assets\Script\ScopeData.cs" />
+    <Compile Include="Assets\Script\Sounds.cs" />
     <None Include="Assets\Script\record.txt" />
     <None Include="Assets\record.txt" />
     <Reference Include="UnityEngine">

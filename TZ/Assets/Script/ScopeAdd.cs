@@ -9,7 +9,6 @@ public class ScopeAdd : MonoBehaviour
     private GameObject player;
     int record;
     int scope;
-    //string path = @"D:\FlappyBird\TZ\TZ\Assets\Script\record.txt";
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
