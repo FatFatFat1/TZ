@@ -19,6 +19,7 @@ public class Sounds : MonoBehaviour
         {
             sounds.GetComponent<Image>().color = Color.red;
         }
+        Debug.Log(music);
     }
     public void MainMenuPressed()
     {
