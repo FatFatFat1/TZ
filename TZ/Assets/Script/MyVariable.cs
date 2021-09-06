@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Хранилище для переменных которые нужно сохранять между сценами (Пока что только настройка звука)
+/// </summary>
 public class MyVariable : MonoBehaviour
 {
-    public static bool musicСondition;
+    public static bool MusicСondition;
 }

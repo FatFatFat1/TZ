@@ -1,25 +1,56 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+/// <summary>
+/// Генератор Майоров
+/// </summary>
 public class MajorGenerator : MonoBehaviour
 {
-    public GameObject major;
-    public GameObject scopeZone;
-    public GameObject player;
-    Vector2 point;
-    Vector2 difference = new Vector2(0, 4);
-    float time = 3; // Раз всколько секунд нужно рожать майоров.
-    void Generation(Vector2 point)
+    #region Public Fields
+    /// <summary>
+    /// Товарищ Майор
+    /// </summary>
+    public GameObject Major;
+    /// <summary>
+    /// Призывник
+    /// </summary>
+    public GameObject Player;
+    /// <summary>
+    /// Летящий невидимый gameObject тригер которого дает очки
+    /// </summary>
+    public GameObject ScopeZone;
+
+    #endregion Public Fields
+
+    #region Private Fields
+
+    /// <summary>
+    /// Ширина отверстия майоров
+    /// </summary>
+    private Vector2 difference = new Vector2(0, 4);
+
+    /// <summary>
+    /// Где генерация майоров
+    /// </summary>
+    private Vector2 point;
+
+    /// <summary>
+    /// Раз в сколько секунд нужно рожать майоров.
+    /// </summary>
+    private float time = 3;
+
+    #endregion Private Fields
+
+    #region Private Methods
+
+    private void Generation(Vector2 point)
     {
-        Instantiate(major, point - difference, Quaternion.identity);
-        Instantiate(major, point + difference, Quaternion.identity);
-        Instantiate(scopeZone, point, Quaternion.identity);
+        Instantiate(Major, point - difference, Quaternion.identity);
+        Instantiate(Major, point + difference, Quaternion.identity);
+        Instantiate(ScopeZone, point, Quaternion.identity);
     }
 
     private void Update()
     {
-        if (player.GetComponent<Fail>().IsLose != true)
+        if (Player.GetComponent<Fail>().IsLose != true)
         {
             time -= Time.deltaTime;
             if (time <= 0)
@@ -30,4 +61,6 @@ public class MajorGenerator : MonoBehaviour
             }
         }
     }
+
+    #endregion Private Methods
 }

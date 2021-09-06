@@ -1,22 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Включение или Отключение Источника музыки,в зависимости от состояния MusicСondition из MyVariable
+/// </summary>
 public class MusicСondition : MonoBehaviour
 {
-    public GameObject soundSource;
-    bool music;
+    #region Public Fields
+
+    /// <summary>
+    /// Источник музыки
+    /// </summary>
+    public GameObject SoundSource;
+
+    #endregion Public Fields
+
+    #region Private Fields
+
+    /// <summary>
+    /// Играет ли сейчас музыка
+    /// </summary>
+    private bool _isMusicPlay;
+
+    #endregion Private Fields
+
+    #region Private Methods
+
     private void Awake()
     {
-        music = MyVariable.musicСondition;
+        _isMusicPlay = MyVariable.MusicСondition;
     }
 
     private void Start()
     {
-        if(!music)
+        if (!_isMusicPlay)
         {
-            soundSource.SetActive(false);
+            SoundSource.SetActive(false);
         }
-
     }
+
+    #endregion Private Methods
 }

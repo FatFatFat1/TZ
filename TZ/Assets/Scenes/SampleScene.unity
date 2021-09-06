@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25533ce062597db49ba0c1b3cc16afe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundSource: {fileID: 1108457104}
+  SoundSource: {fileID: 1108457104}
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,9 +323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c07bbb6263f9f40be46ae315a18c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  major: {fileID: 7559694134596839248, guid: 6994cb7842e2d9847be60869d3a43a8c, type: 3}
-  scopeZone: {fileID: 98230331487222522, guid: f40d99ce2595d6b409548d014607696f, type: 3}
-  player: {fileID: 1194354013}
+  Major: {fileID: 7559694134596839248, guid: 6994cb7842e2d9847be60869d3a43a8c, type: 3}
+  Player: {fileID: 1194354013}
+  ScopeZone: {fileID: 98230331487222522, guid: f40d99ce2595d6b409548d014607696f, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f00af71180b942bd95a225b0a6f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1194354016}
+  Player: {fileID: 1194354016}
 --- !u!95 &1194354019
 Animator:
   serializedVersion: 3
@@ -1237,10 +1237,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66684020f8986884ab8772d00bc4a47e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
-  record: 0
-  scopeBoard: {fileID: 644714758}
-  recordBoard: {fileID: 2095490177}
+  Record: 0
+  RecordBoard: {fileID: 2095490177}
+  Scope: 0
+  ScopeBoard: {fileID: 644714758}
 --- !u!114 &1194354022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,12 +1253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e496c885dcb86e479a6b05a9ee99fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1194354013}
-  board: {fileID: 844739487}
-  failBoard: {fileID: 608492400}
-  failScreen: {fileID: 377777084}
-  floor: {fileID: 1943561290}
+  Board: {fileID: 844739487}
+  FailBoard: {fileID: 608492400}
+  FailScreen: {fileID: 377777084}
+  Floor: {fileID: 1943561290}
   IsLose: 0
+  Player: {fileID: 1194354013}
 --- !u!1 &1387292809
 GameObject:
   m_ObjectHideFlags: 0

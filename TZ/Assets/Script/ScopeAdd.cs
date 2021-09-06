@@ -1,41 +1,62 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 using System.IO;
-using System;
-
+using UnityEngine;
+/// <summary>
+/// Добавление очков по тригеру коллайдера и чтение рекорда из файла рекордов
+/// </summary>
 public class ScopeAdd : MonoBehaviour
 {
-    private GameObject player;
-    int record;
-    int scope;
+    #region Private Fields
+
+    /// <summary>
+    /// Игрок
+    /// </summary>
+    private GameObject _player;
+
+    /// <summary>
+    /// Рекорд игрока
+    /// </summary>
+    private int _record;
+
+    /// <summary>
+    /// Текущие очки игрока
+    /// </summary>
+    private int _scope;
+
+    #endregion Private Fields
+
+    #region Private Methods
+
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        _player = GameObject.FindGameObjectWithTag("Player");
         //Чтение рекорда из файла
         using (FileStream recordSave = new FileStream(Application.dataPath + "/record.txt", FileMode.Open))
         {
             byte[] array = new byte[recordSave.Length];
             recordSave.Read(array, 0, array.Length);
             string textFromFile = System.Text.Encoding.Default.GetString(array);
-            record = Convert.ToInt32(textFromFile);
-            player.GetComponent<ScopeData>().record = record;
+            _record = Convert.ToInt32(textFromFile);
+            _player.GetComponent<ScopeData>().Record = _record;
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        scope = player.GetComponent<ScopeData>().scope;
-        scope += 1;
-        if (scope > record)
+        _scope = _player.GetComponent<ScopeData>().Scope;
+        _scope += 1;
+        if (_scope > _record)
         {
             //Запись нового рекорда
-            player.GetComponent<ScopeData>().record = scope;
+            _player.GetComponent<ScopeData>().Record = _scope;
             using (FileStream recordSave = new FileStream(Application.dataPath + "/record.txt", FileMode.OpenOrCreate))
             {
-                byte[] array = System.Text.Encoding.Default.GetBytes(scope.ToString());
+                byte[] array = System.Text.Encoding.Default.GetBytes(_scope.ToString());
                 recordSave.Write(array, 0, array.Length);
             }
         }
-        player.GetComponent<ScopeData>().scope = scope;
+        _player.GetComponent<ScopeData>().Scope = _scope;
     }
+
+    #endregion Private Methods
 }

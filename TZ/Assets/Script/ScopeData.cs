@@ -1,18 +1,41 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-
+/// <summary>
+/// Обновление очков и рекордов
+/// </summary>
 public class ScopeData : MonoBehaviour
 {
-    public int scope;
-    public int record;
-    public GameObject scopeBoard;
-    public GameObject recordBoard;
+    #region Public Fields
+
+    /// <summary>
+    /// Рекорд
+    /// </summary>
+    public int Record;
+
+    /// <summary>
+    /// То куда записывается рекорд
+    /// </summary>
+    public GameObject RecordBoard;
+
+    /// <summary>
+    /// Текущие очки игрока
+    /// </summary>
+    public int Scope;
+
+    /// <summary>
+    /// То куда записываются очки
+    /// </summary>
+    public GameObject ScopeBoard;
+
+    #endregion Public Fields
+
+    #region Private Methods
+
     private void Update()
     {
-        scopeBoard.GetComponent<Text>().text = scope.ToString();
-        recordBoard.GetComponent<Text>().text = record.ToString();
+        ScopeBoard.GetComponent<Text>().text = Scope.ToString();
+        RecordBoard.GetComponent<Text>().text = Record.ToString();
     }
+
+    #endregion Private Methods
 }
