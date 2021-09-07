@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - MajorGenerator
     - MajorMove
     - "Music\u0421ondition"
+    - Pause
     - ScopeAdd
     - ScopeData
     - Sounds
@@ -240,67 +241,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13720}
     - Class: 114
-      Script: {instanceID: 13834}
+      Script: {instanceID: 13836}
     - Class: 114
-      Script: {instanceID: 14080}
+      Script: {instanceID: 14082}
     - Class: 114
-      Script: {instanceID: 14112}
+      Script: {instanceID: 14114}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 14262}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 14304}
     - Class: 114
-      Script: {instanceID: 14312}
-    - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14314}
     - Class: 114
       Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 14350}
     - Class: 114
-      Script: {instanceID: 14418}
+      Script: {instanceID: 14368}
     - Class: 114
-      Script: {instanceID: 14434}
+      Script: {instanceID: 14420}
     - Class: 114
-      Script: {instanceID: 14552}
+      Script: {instanceID: 14436}
     - Class: 114
-      Script: {instanceID: 14710}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14750}
+      Script: {instanceID: 14712}
     - Class: 114
-      Script: {instanceID: 14784}
+      Script: {instanceID: 14752}
     - Class: 114
-      Script: {instanceID: 14824}
+      Script: {instanceID: 14786}
     - Class: 114
-      Script: {instanceID: 14844}
+      Script: {instanceID: 14826}
     - Class: 114
-      Script: {instanceID: 14848}
+      Script: {instanceID: 14846}
     - Class: 114
-      Script: {instanceID: 15042}
+      Script: {instanceID: 14850}
     - Class: 114
-      Script: {instanceID: 15104}
+      Script: {instanceID: 15044}
     - Class: 114
-      Script: {instanceID: 15150}
+      Script: {instanceID: 15106}
     - Class: 114
-      Script: {instanceID: 15178}
+      Script: {instanceID: 15152}
     - Class: 114
-      Script: {instanceID: 15228}
+      Script: {instanceID: 15180}
     - Class: 114
-      Script: {instanceID: 15310}
+      Script: {instanceID: 15230}
     - Class: 114
-      Script: {instanceID: 15338}
+      Script: {instanceID: 15312}
     - Class: 114
-      Script: {instanceID: 15384}
+      Script: {instanceID: 15340}
     - Class: 114
-      Script: {instanceID: 15474}
+      Script: {instanceID: 15386}
     - Class: 114
-      Script: {instanceID: 15500}
+      Script: {instanceID: 15476}
     - Class: 114
-      Script: {instanceID: 15512}
+      Script: {instanceID: 15502}
     - Class: 114
-      Script: {instanceID: 15548}
+      Script: {instanceID: 15514}
     - Class: 114
-      Script: {instanceID: 17068}
+      Script: {instanceID: 15550}
+    - Class: 114
+      Script: {instanceID: 17228}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -383,15 +384,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13534}
     - Class: 114
-      Script: {instanceID: 14004}
+      Script: {instanceID: 13784}
     - Class: 114
-      Script: {instanceID: 14362}
+      Script: {instanceID: 14006}
     - Class: 114
-      Script: {instanceID: 14552}
+      Script: {instanceID: 14364}
     - Class: 114
-      Script: {instanceID: 15384}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 15460}
+      Script: {instanceID: 15386}
+    - Class: 114
+      Script: {instanceID: 15462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -438,11 +441,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13534}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 14108}
     - Class: 114
-      Script: {instanceID: 14552}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 15384}
+      Script: {instanceID: 15386}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -480,7 +483,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: cacddb5b65f863bc3c7689b0849eb675
+      Hash: 0b549b51f9551dd9db51eb2f62c5bde3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScopeData
@@ -540,7 +543,7 @@ ScriptsOnlyBuild:
     className: Asteroid
   - hash:
       serializedVersion: 2
-      Hash: cdeeec090e41c66fff1d022be4d047c8
+      Hash: f36dba1fe7677632d79eedd9656a195a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: "Music\u0421ondition"
@@ -834,7 +837,7 @@ ScriptsOnlyBuild:
     className: PlayerInstaller
   - hash:
       serializedVersion: 2
-      Hash: 08268947de453c6b661826aa7df195bc
+      Hash: e7f105d9a652db62fe1918fc5d3f1edc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenuRecord
@@ -1110,7 +1113,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 38186d85b7ac58f5d496ec8d46399d68
+      Hash: 7b41c524a3d4f0cc37bb1397bfacb2a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Fail
@@ -1174,6 +1177,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: bdaa0a6c9b8e9f6ebe94326c268f8d93
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pause
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1266,7 +1275,7 @@ ScriptsOnlyBuild:
     className: Norf
   - hash:
       serializedVersion: 2
-      Hash: 99844e0748eaa4e63e33c3ee36b11a42
+      Hash: 5da24b1f6acab7454c5d76be2b753978
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sounds
@@ -1326,7 +1335,7 @@ ScriptsOnlyBuild:
     className: Gorp2
   - hash:
       serializedVersion: 2
-      Hash: 545d8205d0f5640752bf01fb3c58cf5c
+      Hash: 7d8dda8c49f0c827d57164f8902d2f3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MajorGenerator
@@ -1596,7 +1605,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 90ff2fa312c6614585876af2027caac8
+      Hash: fe3d070ce38127a356dd959c1798eb0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterMove
