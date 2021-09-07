@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\MajorMove.cs" />
     <Compile Include="Assets\Script\MusicСondition.cs" />
     <Compile Include="Assets\Script\MyVariable.cs" />
+    <Compile Include="Assets\Script\Pause.cs" />
     <Compile Include="Assets\Script\ScopeAdd.cs" />
     <Compile Include="Assets\Script\ScopeData.cs" />
     <Compile Include="Assets\Script\Sounds.cs" />
